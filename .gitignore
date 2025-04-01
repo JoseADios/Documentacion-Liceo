@@ -1,0 +1,120 @@
+# .NET Core
+bin/
+obj/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.dbmdl
+*.jfm
+*.ntvs*
+*.njsproj
+*.sln.docstates
+*.dbmdl
+*.jfm
+*.ntvs*
+*.njsproj
+*.sln.docstates
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.ntvs*
+*.njsproj
+*.sln.docstates
+*.dbmdl
+*.jfm
+*.ntvs*
+*.njsproj
+*.sln.docstates
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# SQL Server files
+*.mdf
+*.ldf
+*.ndf
+*.mdf
+*.ldf
+*.ndf
+
+# User-specific files
+*.rsuser
+*.jsproj.user
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NuGet Packages
+*.nupkg
+# NuGet Symbol Packages
+*.snupkg
+# The packages folder can be ignored because of Package Restore
+**/[Pp]ackages/*
+# except build/, which is used as an MSBuild target.
+!**/[Pp]ackages/build/
+
+# Visual Studio cache/options directory
+.vs/
+
+# Visual Studio Code workspace files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msixbundle
+*.appx
+*.appxbundle
+*.appxupload
+
+# Windows shortcuts
+*.lnk
+
+# Local IIS files
+iisexpress/
+*.user
+*.sln.docstates
+
+# Entity Framework Migrations
+Migrations/
+*.MigrationHistory
+*.ModelSnapshot.cs
+
+# Database connection strings
+*.config.user
+*.config.transform
+
+# Logs
+*.log
+logs/

@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{314E6199-88E0-4E88-8978-8805CE64D498}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CapaPresentacion</RootNamespace>
+    <AssemblyName>CapaPresentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\PDocumentacionLiceo\packages\FontAwesome.Sharp.5.15.4\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\PDocumentacionLiceo\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\PDocumentacionLiceo\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\PDocumentacionLiceo\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\PDocumentacionLiceo\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\PDocumentacionLiceo\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\PDocumentacionLiceo\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSetCurso.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetCurso.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAcercaDe.Designer.cs">
+      <DependentUpon>FAcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultGeneralEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultGeneralEstudiante.designer.cs">
+      <DependentUpon>ConsultGeneralEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetEstudiantes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetEstudiantes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSolicitudes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetSolicitudes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetTiposDoc.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetTiposDoc.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos\DataSetCartaRec.cs">
+      <DependentUpon>DataSetCartaRec.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos\DataSetCartaRec.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetCartaRec.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos\DataSetRecordNotas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetRecordNotas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos\DatosCartaRec.cs" />
+    <Compile Include="Documentos\FReporteCartaRec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documentos\FReporteCartaRec.Designer.cs">
+      <DependentUpon>FReporteCartaRec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos\FReporteRecordNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documentos\FReporteRecordNotas.Designer.cs">
+      <DependentUpon>FReporteRecordNotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FBuscarEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBuscarEstudiante.designer.cs">
+      <DependentUpon>FBuscarEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FConsultarSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsultarSolicitud.Designer.cs">
+      <DependentUpon>FConsultarSolicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FConsultaSolicitudEntrega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsultaSolicitudEntrega.Designer.cs">
+      <DependentUpon>FConsultaSolicitudEntrega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultarTiposDocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultarTiposDocs.designer.cs">
+      <DependentUpon>FormConsultarTiposDocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuP.Designer.cs">
+      <DependentUpon>FormMenuP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarTiposDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarTiposDoc.Designer.cs">
+      <DependentUpon>FormBuscarTiposDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMantTipoDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMantTipoDoc.Designer.cs">
+      <DependentUpon>FormMantTipoDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos\FRegistroEntrega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documentos\FRegistroEntrega.Designer.cs">
+      <DependentUpon>FRegistroEntrega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantEstudiante.designer.cs">
+      <DependentUpon>MantEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevaSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevaSolicitud.Designer.cs">
+      <DependentUpon>NuevaSolicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporteCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteCurso.designer.cs">
+      <DependentUpon>ReporteCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteEstudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteEstudiantes.designer.cs">
+      <DependentUpon>ReporteEstudiantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteSolicitudes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteSolicitudes.Designer.cs">
+      <DependentUpon>ReporteSolicitudes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteTiposDocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteTiposDocs.Designer.cs">
+      <DependentUpon>ReporteTiposDocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SolicitudesReportes\FRepEntregaDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SolicitudesReportes\FRepEntregaDoc.Designer.cs">
+      <DependentUpon>FRepEntregaDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SolicitudesReportes\FReporteSoliRelacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SolicitudesReportes\FReporteSoliRelacion.Designer.cs">
+      <DependentUpon>FReporteSoliRelacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SolicitudesReportes\FSoliEntregada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SolicitudesReportes\FSoliEntregada.Designer.cs">
+      <DependentUpon>FSoliEntregada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="FAcercaDe.resx">
+      <DependentUpon>FAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultGeneralEstudiante.resx">
+      <DependentUpon>ConsultGeneralEstudiante.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documentos\FReporteCartaRec.resx">
+      <DependentUpon>FReporteCartaRec.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documentos\FReporteRecordNotas.resx">
+      <DependentUpon>FReporteRecordNotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documentos\ReporteCartaRec.rdlc" />
+    <EmbeddedResource Include="Documentos\ReportRecordNotas.rdlc" />
+    <EmbeddedResource Include="FBuscarEstudiante.resx">
+      <DependentUpon>FBuscarEstudiante.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultarSolicitud.resx">
+      <DependentUpon>FConsultarSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultaSolicitudEntrega.resx">
+      <DependentUpon>FConsultaSolicitudEntrega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultarTiposDocs.resx">
+      <DependentUpon>FormConsultarTiposDocs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuP.resx">
+      <DependentUpon>FormMenuP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarTiposDoc.resx">
+      <DependentUpon>FormBuscarTiposDoc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMantTipoDoc.resx">
+      <DependentUpon>FormMantTipoDoc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documentos\FRegistroEntrega.resx">
+      <DependentUpon>FRegistroEntrega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantEstudiante.resx">
+      <DependentUpon>MantEstudiante.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevaSolicitud.resx">
+      <DependentUpon>NuevaSolicitud.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportCurso.rdlc" />
+    <EmbeddedResource Include="ReporteCurso.resx">
+      <DependentUpon>ReporteCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteEstudiantes.rdlc" />
+    <EmbeddedResource Include="ReporteEstudiantes.resx">
+      <DependentUpon>ReporteEstudiantes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteSolicitudConE.rdlc" />
+    <EmbeddedResource Include="ReporteSolicitudes.resx">
+      <DependentUpon>ReporteSolicitudes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteTiposDocs.rdlc" />
+    <EmbeddedResource Include="ReporteTiposDocs.resx">
+      <DependentUpon>ReporteTiposDocs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportSolicitud.rdlc" />
+    <EmbeddedResource Include="SolicitudesReportes\FRepEntregaDoc.resx">
+      <DependentUpon>FRepEntregaDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolicitudesReportes\FReporteSoliRelacion.resx">
+      <DependentUpon>FReporteSoliRelacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolicitudesReportes\FSoliEntregada.resx">
+      <DependentUpon>FSoliEntregada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolicitudesReportes\ReporteEntregasDocs.rdlc" />
+    <EmbeddedResource Include="SolicitudesReportes\ReporteSoliEntregada.rdlc" />
+    <EmbeddedResource Include="SolicitudesReportes\ReporteSoliRelacion.rdlc" />
+    <None Include="DataSetCurso.xsc">
+      <DependentUpon>DataSetCurso.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetCurso.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetCurso.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetCurso.xss">
+      <DependentUpon>DataSetCurso.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetEstudiantes.xsc">
+      <DependentUpon>DataSetEstudiantes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetEstudiantes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetEstudiantes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetEstudiantes.xss">
+      <DependentUpon>DataSetEstudiantes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSolicitudes.xsc">
+      <DependentUpon>DataSetSolicitudes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSolicitudes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetSolicitudes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSolicitudes.xss">
+      <DependentUpon>DataSetSolicitudes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTiposDoc.xsc">
+      <DependentUpon>DataSetTiposDoc.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTiposDoc.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetTiposDoc.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetTiposDoc.xss">
+      <DependentUpon>DataSetTiposDoc.xsd</DependentUpon>
+    </None>
+    <None Include="Documentos\DataSetCartaRec.xsc">
+      <DependentUpon>DataSetCartaRec.xsd</DependentUpon>
+    </None>
+    <None Include="Documentos\DataSetCartaRec.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetCartaRec.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Documentos\DataSetCartaRec.xss">
+      <DependentUpon>DataSetCartaRec.xsd</DependentUpon>
+    </None>
+    <None Include="Documentos\DataSetRecordNotas.xsc">
+      <DependentUpon>DataSetRecordNotas.xsd</DependentUpon>
+    </None>
+    <None Include="Documentos\DataSetRecordNotas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetRecordNotas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Documentos\DataSetRecordNotas.xss">
+      <DependentUpon>DataSetRecordNotas.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\CapaPresentacion.Documentos.DatosCartaRec.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{578c2a00-098e-4476-9051-5df933f84e1b}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgimg.jpg" />
+    <None Include="Resources\educacion.png" />
+    <None Include="Resources\logoDocumentacion.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
